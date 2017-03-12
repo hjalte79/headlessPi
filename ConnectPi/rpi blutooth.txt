@@ -1,0 +1,20 @@
+﻿sudo hciconfig hci0 name 'Device Name'
+
+You need to activate the ISCAN service to achieve this:
+
+sudo hciconfig hci0 piscan
+
+after this, when you execute sudo hciconfig -a, you should see this line:
+
+UP RUNNING PSCAN ISCAN
+
+After that, just run bluez-simple-agent and when the Agent is started (don't kill the process), use the other device to scan and find the RPI. Start the pairing and you will get the PIN prompt in the console. When done, the devices are paired. You can stop the bluez-simple-agent with CTRL+C.
+
+If you want to add the device as trusted, execute:
+
+bluez-test-device trusted XX:XX:XX:XX:XX:XX yes
+
+where XX:XX:XX:XX:XX:XX is the bluetooth device address.
+
+hciconfig hci0 piscan <-- visible
+hciconfig hci0 noscan <-- hidden

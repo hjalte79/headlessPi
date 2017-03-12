@@ -1,0 +1,8 @@
+﻿https://www.raspberrypi.org/documentation/remote-access/ssh/
+
+
+https://www.raspberrypi.org/documentation/configuration/wireless/wireless-cli.md
+http://raspberrypi.stackexchange.com/questions/10251/prepare-sd-card-for-wifi-on-headless-pi
+
+otg (on the go)
+https://raspberrytips.nl/raspberry-pi-zero-usb-otg/
